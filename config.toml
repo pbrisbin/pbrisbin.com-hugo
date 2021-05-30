@@ -1,0 +1,4 @@
+baseURL = "https://pbrisbin.com/"
+languageCode = "en-us"
+title = "pbrisbindotcom"
+theme = "mini"
