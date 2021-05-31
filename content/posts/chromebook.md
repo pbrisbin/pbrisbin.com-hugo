@@ -128,8 +128,8 @@ the price and with better battery life. This terminal is certainly
 better than Terminal.app and might even be better than iTerm2.
 
 
-![chromebook shell](https://images.pbrisbin.com/chromebook/chromebook_shell.png)\ 
+![chromebook shell](https://images.pbrisbin.com/chromebook/chromebook_shell.png)
 
-![chromebook htop](https://images.pbrisbin.com/chromebook/chromebook_htop.png)\ 
+![chromebook htop](https://images.pbrisbin.com/chromebook/chromebook_htop.png)
 
 In short, do eeeeet.

@@ -521,9 +521,9 @@ And there you go; Service done.
 
 As always, the obligatory screenshots.
 
-![Raw Audio](https://images.pbrisbin.com/raw_audio/raw_audio.png)\ 
+![Raw Audio](https://images.pbrisbin.com/raw_audio/raw_audio.png)
 
-![Raw Audio Progress](https://images.pbrisbin.com/raw_audio/raw_audio_progress.png)\ 
+![Raw Audio Progress](https://images.pbrisbin.com/raw_audio/raw_audio_progress.png)
 
 ## References
 
