@@ -9,11 +9,9 @@ primarily a copy-paste-able reference for myself, but I've also tried to explain
 or generalize some things to make it useful for anyone first bootstrapping a
 Haskell project.
 
-<div class="well">
 **NOTE**: if you were brought here after googling something like "how to Haskell
 on Circle 2.0", you'll just need the [`Makefile`](#makefile) and
 [`.circleci/config.yml`](#circleyml).
-</div>
 
 ## 1. Use [stack][] & [hpack][]
 
