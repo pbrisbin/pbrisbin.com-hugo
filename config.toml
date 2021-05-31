@@ -1,7 +1,7 @@
 baseURL = "https://pbrisbin.com/"
 languageCode = "en-us"
 title = "pbrisbin dot com"
-theme = "mini"
+theme = "mini-mod"
 
 
 [markup]
