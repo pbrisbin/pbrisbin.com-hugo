@@ -6,7 +6,7 @@ theme = "mini-mod"
 
 [markup]
   [markup.highlight]
-    style = "pygments"
+    style = "lovelace"
 
 [social]
   github = "https://github.com/pbrisbin"
