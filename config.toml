@@ -1,4 +1,16 @@
 baseURL = "https://pbrisbin.com/"
 languageCode = "en-us"
-title = "pbrisbindotcom"
+title = "pbrisbin dot com"
 theme = "mini"
+
+
+[markup]
+  [markup.highlight]
+    style = "pygments"
+
+[social]
+  github = "https://github.com/pbrisbin"
+  twitter = "https://twitter.com/patbrisbin"
+
+[params]
+  copyright = "© pbrisbin dot com 2008 - forever"
