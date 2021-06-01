@@ -266,7 +266,8 @@ But wait, the code with the bug still compiles:
 ```
 
 How can that be? Well, `matchAny` (built on `matchText`, built on `match`) makes
-no demands of the `a` so it works with any `Glob`. Let's fix that...
+no demands of the `a` so it works with any `Glob`. We should state _in the
+types_ that a "`Glob` of `a`" can only, well, glob "some `a`":
 
 ```hs
 -- Restyler.Config.Glob
