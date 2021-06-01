@@ -13,11 +13,10 @@ thing working -- more power to you.
 
 Here, it's slightly different.
 
-People here are working in a sane, documented, open-source world; and 
-they're good. Everyone is acutely aware of what's good design and what's 
-not. There's a focus on elegant code, industry standards, solid 
-<abbr title="object oriented programming">OOP</abbr> principles, and 
-most importantly, we practice Test Driven Development.
+People here are working in a sane, documented, open-source world; and they're
+good. Everyone is acutely aware of what's good design and what's not. There's a
+focus on elegant code, industry standards, solid OOP principles, and most
+importantly, we practice Test Driven Development.
 
 I'm completely new to this method for development, and I gotta say, it's 
 quite nice.
