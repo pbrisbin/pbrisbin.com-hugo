@@ -87,6 +87,9 @@ p {
 /*   line-break: anywhere; */
 /*   word-break: break-all; */
 /* } */
+.markdown-image {
+  text-align: center;
+}
 .markdown-image img {
   max-width: 100%;
 }
