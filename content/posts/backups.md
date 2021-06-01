@@ -8,9 +8,9 @@ tags: [linux]
 This post is very out of date. The scripts which are its subject no 
 longer exist as I now use two much simpler scripts which can be found in 
 my [scripts repo][scripts].
-{{< /well >}}
 
 [scripts]: https://github.com/pbrisbin/scripts "Scripts"
+{{< /well >}}
 
 Backups are extremely important. In linux, with a little effort and 
 hardrive space, one can easily come up with a fully automated backup 
@@ -35,7 +35,7 @@ just have to modify my below script(s) to suit your setup.
 ## How I do it
 
 The first is a backup script that runs via cron daily and monthly. 
-<del>It can be downloaded from my git repo</del>.
+~~It can be downloaded from my git repo~~.
 
 The script defines an array of files to include and another to exclude:
 
