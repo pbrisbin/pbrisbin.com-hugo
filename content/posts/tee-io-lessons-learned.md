@@ -14,7 +14,7 @@ long) command to finish and report all the output back to us at once.
 [tee-io]: https://tee-io.herokuapp.com
 [api]: http://docs.teeio.apiary.io/#
 
-![tee-io-in-action](https://tee-io.herokuapp.com/static/demo.gif)\
+![tee-io-in-action](https://tee-io.herokuapp.com/static/demo.gif)
 
 While working on this project, which is built with Yesod, I started to settle on
 some conventions for things I've not seen written up in the wild. I'd like to
@@ -245,9 +245,9 @@ log_level=LevelDebug host=HostIPv4 port=3000 root="http://localhost:3000"
   s3_bucket=tee.io.development command_timeout=5s
 ```
 
-<small>
+{{< small >}}
 *(Line breaks added for readability, here and below.)*
-</small>
+{{< /small >}}
 
 And I can investigate or alter my local data easily with `db`:
 
