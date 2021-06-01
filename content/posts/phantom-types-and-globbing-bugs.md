@@ -296,7 +296,7 @@ So many things have snapped into place here:
 First of all, our bugged code fails to compile now. Since the `Glob a` has to
 agree with the `a` you call it on, it's impossible to misuse in the way we did:
 
-```
+```plain
     • Couldn't match expected type ‘Name IssueLabel’
                   with actual type ‘Text’
     • In the expression: branch
