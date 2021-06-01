@@ -90,11 +90,11 @@ myKeys = [ ...
            mPlay s = spawn $ "echo " ++ s ++ " > $HOME/.mplayer_fifo"
 ```
 
-<div class="well">
+{{< well >}}
 I'm using 
 [EZConfig](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Util-EZConfig.html) 
 notation in my keybindings.
-</div>
+{{< /well >}}
 
 I'll leave it up to you to figure out your WM's keybind
 configuration or use some generic tool like xbindkeys.

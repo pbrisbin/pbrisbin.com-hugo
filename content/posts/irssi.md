@@ -8,10 +8,10 @@ Irssi is an IRC client. If that sentence made no sense, then read no further.
 This post outlines my current irssi setup as I think it's quite nice and others
 may wish to copy it.
 
-<div class="well">
+{{< well >}}
 **Note**: I've since moved to weechat. If anyone's interested, that config can
 be found [here][weechat].
-</div>
+{{< /well >}}
 
 [weechat]: https://github.com/pbrisbin/dotfiles/tree/v1.0/tag-weechat
 

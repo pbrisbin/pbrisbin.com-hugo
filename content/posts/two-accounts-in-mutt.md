@@ -8,14 +8,14 @@ Mutt can be really great with multiple accounts, but it's not exactly
 intuitive to setup. Here I'll document how I access two Gmail accounts 
 together in one mutt instance.
 
-<div class="well">
+{{< well >}}
 If you haven't yet seen my previous mutt post, please go read [that][] 
 now. I recommend using that post to get a single account setup first 
 before coming back here. Even if you plan to jump right into a 
 multi-account setup, this post assumes you've at least read the other 
 one and will focus on the differences and required changes to get from 
 there to here.
-</div>
+{{< /well >}}
 
 [that]: https://pbrisbin.com/posts/mutt_gmail_offlineimap
 
@@ -63,10 +63,10 @@ realdelete = no
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ```
 
-<div class="well">
+{{< well >}}
 Obviously, if either of these accounts weren't a Gmail server, the 
 configuration blocks would be different.
-</div>
+{{< /well >}}
 
 You can test your setup by running `offlineimap -o` to sync things once.
 It could take a while, but once done, you should have a nice folder
@@ -166,10 +166,10 @@ macro index S \
         "mark message as spam"
 ```
 
-<div class="well">
+{{< well >}}
 Notice the `color` line which changes the status bar depending on what 
 account I'm "in" at any given moment.
-</div>
+{{< /well >}}
 
 The following settings will tell mutt to source one of these files upon 
 entering a folder matching the given pattern, this will setup all the 

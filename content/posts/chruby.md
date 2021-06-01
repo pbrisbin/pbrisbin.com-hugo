@@ -21,12 +21,12 @@ far, I'm a big fan.
 [rvm]:    http://github.com/wayneeseguin/rvm
 [rbenv]:  http://github.com/sstephenson/rbenv
 
-<div class="well">
+{{< well >}}
 For detailed instructions and usage please see the `README` files in the 
 previously linked project pages. This post might gloss over some details 
 and focuses more on my opinion of the tools than their usage. For Arch 
 users, there are AUR PKGBUILDs for all of these.
-</div>
+{{< /well >}}
 
 ## Choices
 
@@ -71,10 +71,10 @@ enabled, you will automatically change rubies when you enter a directory
 containing a `.ruby-version` file. This is done cleanly via a pre-prompt 
 command and not by hijacking `cd`.
 
-<div class="well">
+{{< well >}}
 When auto-switching is enabled, be sure to define a "default" by 
 dropping a `.ruby-version` in `$HOME` too.
-</div>
+{{< /well >}}
 
 Here are the entries in my `~/.zshenv` (the same should work in bash):
 
@@ -86,12 +86,12 @@ if [[ -e /usr/share/chruby ]]; then
 fi
 ```
 
-<div class="well">
+{{< well >}}
 The AUR PKGBUILD installs into `/usr/share` while the chruby README 
 prescribes `/usr/local/share`. This may be a packaging bug that will 
 eventually be fixed so be sure to verify and use the appropriate paths 
 for your install.
-</div>
+{{< /well >}}
 
 So far, I'm a huge fan. The tool does what it advertises exactly and 
 simply. The small feature-set is also exactly and only the features I 
@@ -111,10 +111,10 @@ $ ruby-build 1.9.3-p392 ~/.rubies/ruby-1.9.3-p392
 $ ruby-build 2.0.0-p0 ~/.rubies/ruby-2.0.0-p0
 ```
 
-<div class="well">
+{{< well >}}
 Chruby will look for rubies installed in one of two places by default: 
 `/opt/rubies/` or `~/.rubies/`. I prefer the latter.
-</div>
+{{< /well >}}
 
 Since ruby-build is actually a sub-tool of rbenv, it's quite spartan. 
 You're required to type the desired version exactly (as read from 
@@ -122,12 +122,12 @@ You're required to type the desired version exactly (as read from
 path, even though it could be determined easily by convention. `rbenv 
 install` owns those niceties, apparently.
 
-<div class="well">
+{{< well >}}
 After this post was written, the author of chruby actually released a 
 ruby-build competitor called [ruby-install][]. It's feature-set is very 
 much the same and it allows fuzzy commands like `ruby-install ruby 1.9`. 
 I very much recommend it.
-</div>
+{{< /well >}}
 
 [ruby-install]: https://github.com/postmodern/ruby-install
 

@@ -30,10 +30,10 @@ Udev has a little folder called `/etc/udev/rules.d`. In this folder, are
 one each time some udev 'event' occurs, like, say, plugging in a 
 flashdrive.
 
-<div class="well">
+{{< well >}}
 Go google udev rules, there's a lot out there for all sorts of nifty 
 things.
-</div>
+{{< /well >}}
 
 Someone smarter than I added a handful of useful rules to the Arch [udev 
 wiki page][]. The one I use is as follows:

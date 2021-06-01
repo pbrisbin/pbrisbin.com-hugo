@@ -64,10 +64,10 @@ process for you:
 $ curl https://github.com/pbrisbin/raury/raw/master/install.sh | bash
 ```
 
-<div class="well">
+{{< well >}}
 Also, tlvince was kind enough to create a PKGBUILD and even maintain an 
 AUR [package][raury-git] for raury. Check that out if it's your 
 preferred way to install.
-</div>
+{{< /well >}}
 
 [raury-git]: https://aur.archlinux.org/packages.php?ID=63129

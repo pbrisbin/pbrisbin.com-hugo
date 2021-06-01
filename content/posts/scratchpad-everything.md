@@ -43,12 +43,12 @@ So of course, we'll need to add
 `import XMonad.Util.NamedScratchpad` to the top of our config
 file.
 
-<div class="well">
+{{< well >}}
 Please refer back to my previous [post](/posts/xmonad_scratchpad/) for 
 information regarding some boilerplate code. This writeup assumes you 
 have a main-do block that calls out `myManageHook` and `myKeys` to be 
 defined as separate functions. I also won't be going into hiding the NSP 
-</div>
+{{< /well >}}
 
 ## Scratchpads
 
@@ -61,7 +61,7 @@ specified to fully describe a scratchpad:
 -   A Query Bool: The way to find the window once it's running
 -   A ManageHook: The way to manage the window when we call it up
 
-<div class="well">
+{{< well >}}
 Those last two data types might sound scary, but they aren't. If
 you think of the fact that most users define custom window
 management in a list of `(Query Bool --> ManageHook)` and one
@@ -69,7 +69,7 @@ representation of this might be
 `(className =? "Firefox" --> doFloat)` that should give you an idea
 of the sorts of functions that you should use to fill those last
 two slots for your scratchpads.
-</div>
+{{< /well >}}
 
 The 
 [haddocks](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Util-Scratchpad.html)
@@ -112,13 +112,13 @@ So you can see I have a list containing two scratchpads. The
 datatype syntax requires the "NS" plus the four things I've listed
 above.
 
-<div class="well">
+{{< well >}}
 You'll notice I liberally use sub-functions via where clauses. You
 can think of these as simple variables and if parenthesized and
 placed directly where they're called out, they would work exactly
 the same. I think this is clearer and it should be fairly obvious
 how it works.
-</div>
+{{< /well >}}
 
 The beauty of all this is that it's almost all that's needed. Each
 scratchpad has a name which can be bound to a key; even better, the
@@ -145,11 +145,11 @@ myKeys = [ ...
            scratchMixer = namedScratchpadAction myScratchPads "mixer"
 ```
 
-<div class="well">
+{{< well >}}
 I'm using 
 [EZConfig](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Util-EZConfig.html) 
 notation in my keybindings.
-</div>
+{{< /well >}}
 
 And tacked the following onto the end of my managehook:
 

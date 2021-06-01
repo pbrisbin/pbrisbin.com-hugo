@@ -4,11 +4,11 @@ date: 2010-01-03
 tags: [linux]
 ---
 
-<div class="well">
+{{< well >}}
 This post is very out of date. The scripts which are its subject no 
 longer exist as I now use two much simpler scripts which can be found in 
 my [scripts repo][scripts].
-</div>
+{{< /well >}}
 
 [scripts]: https://github.com/pbrisbin/scripts "Scripts"
 

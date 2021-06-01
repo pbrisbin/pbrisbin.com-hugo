@@ -7,7 +7,7 @@ tags: [haskell, xmonad]
 This page is to serve as both an apology and an announcement. I've
 recently modularized my `xmonad.hs`. I'm sorry.
 
-<div class="well">
+{{< well >}}
 This is no longer true. I've since gone through a bit of a config
 cleanse, deciding it makes my life easier to live closer to defaults and
 not carry around a lot of extra configuration or features (that I don't
@@ -16,7 +16,7 @@ actively use).
 As part of this cleanse, I've stripped my config back down to a very
 lean `xmonad.hs` that can easily live within the confines of a single
 file.
-</div>
+{{< /well >}}
 
 ## Who cares?
 

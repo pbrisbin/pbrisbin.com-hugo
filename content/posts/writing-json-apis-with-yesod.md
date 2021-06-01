@@ -24,13 +24,13 @@ In this post, I'll outline the process of building such a site, explain
 some conventions I've landed on, and discuss one possible pitfall when 
 dealing with model relations.
 
-<div class="well">
+{{< well >}}
 **Note**: The code in this tutorial was extracted from a current
 [project][carnival] and is in fact working there. However, I haven't
 test-compiled the examples exactly as they appear in the post. It's entirely
 possible there are typos and the like. Please reach out on Twitter or via email
 if you run into any trouble with the examples.
-</div>
+{{< /well >}}
 
 [carnival]: https://github.com/thoughtbot/carnival
 
@@ -334,11 +334,11 @@ putCommentR pid cid = do
     sendResponseStatus status200 ("UPDATED" :: Text)
 ```
 
-<div class="well">
+{{< well >}}
 We don't need a type annotation on `requireJsonBody` in this case. Since 
 the result is being passed to `toComment pid`, Haskell knows we want a 
 `CommentAttrs` and uses its `parseJSON` function within `requireJsonBody`
-</div>
+{{< /well >}}
 
 ## Conclusion
 

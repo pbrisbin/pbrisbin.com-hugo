@@ -59,9 +59,9 @@ works.
 
 A beautiful thing.
 
-<div class="well">
+{{< well >}}
 I use [slicehost][]. They have an Arch image. They rock.
-</div>
+{{< /well >}}
 
 If you're interested, you can view the source on my [github][]; 
 pull-requests always welcome.

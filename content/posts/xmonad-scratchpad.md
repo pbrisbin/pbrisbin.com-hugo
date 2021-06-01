@@ -134,11 +134,11 @@ myLogHook h = dynamicLogWithPP $ defaultPP
   }
 ```
 
-<div class="well">
+{{< well >}}
 The above requires other contrib modules, changes to main, and special 
 imports to get working. As I've said, I'm leaving it as an exercise for 
 the reader to set up her own logHook.
-</div>
+{{< /well >}}
 
 Once we've got this, filtering out the NSP workspace is pretty straight 
 forward. Here's the above again, but this time with the NSP workspace 

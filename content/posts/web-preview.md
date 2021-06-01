@@ -35,11 +35,11 @@ This works nicely for me because my desktop is my web server. All I have
 to do is `vim /srv/http/pages/foo.html` and I'm editing 
 `http://localhost/pages/foo.html` directly.
 
-<div class="well">
+{{< well >}}
 I'm not saying it's impossible to pull this off with a remote server, 
 this just makes things easier. It's up to you to port my script for use 
 in a remote server setting.
-</div>
+{{< /well >}}
 
 First thing you'll need is my 
 [script](http://github.com/pbrisbin/scripts/blob/master/webpreview), 
@@ -50,10 +50,10 @@ environment. These variables are used to turn a filename like
 `/srv/http/pages/foo.html` into a url like 
 `http://localhost/pages/foo.html.`
 
-<div class="well">
+{{< well >}}
 Recently the script has changed slightly to work with my new framework; 
 I now just define `file_url` as a direct modification of `$2`.
-</div>
+{{< /well >}}
 
 Make sure you've got uzbl installed and `uzbl-core` is also in your 
 `$PATH`.
@@ -71,10 +71,10 @@ Add the following uber simplistic configuration file for uzbl at
 This just makes sure a socket is placed in `/tmp` and makes the status 
 bar a little more pleasing on the eyes.
 
-<div class="well">
+{{< well >}}
 Only the `socket_dir` declaration is actually needed for the script to 
 function.
-</div>
+{{< /well >}}
 
 Finally, add the following to your `~/.vimrc`:
 

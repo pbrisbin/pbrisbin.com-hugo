@@ -4,9 +4,9 @@ date: 2009-12-05
 tags: [shell]
 ---
 
-<div class="well">
+{{< well >}}
 Do not use this for bad things, m'kay?
-</div>
+{{< /well >}}
 
 ## What it looks like
 

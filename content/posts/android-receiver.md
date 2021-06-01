@@ -87,7 +87,7 @@ spot because I'm expecting a call. Instead, I'll see this:
 
 The source for this script can be found in my [github][].
 
-<div class="well">
+{{< well >}}
 In my continued attempts to learn some C, I decided to combine the 
 netcat and message parsing functions of the above into a small C app.
 
@@ -102,7 +102,7 @@ only the `handle_dzen()` function and renamed it to `dzen-handler` such
 that it can be used by any application that wants to toss up a brief 
 notification. This script is also available in that android-receiver 
 repo.
-</div>
+{{< /well >}}
 
 [Android notifier]: http://code.google.com/p/android-notifier/ "android notifier"
 [github]:           https://github.com/pbrisbin/scripts/blob/e94b24edd89f26b19c88e6d81d8ea7332358f937/android-receiver "my github"

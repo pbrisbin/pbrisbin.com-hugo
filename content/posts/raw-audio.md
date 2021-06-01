@@ -4,12 +4,12 @@ date: 2010-05-28
 tags: [android]
 ---
 
-<div class="well">
+{{< well >}}
 I am not an android developer. I am not even a Java developer. What appears
 below is my attempt to share what I've learned using the android documentation,
 google, and copious amounts of trial and/or error. I apologize for mistakes;
 please offer corrections via twitter or email.
-</div>
+{{< /well >}}
 
 I was upset when I first got my Droid Eris that the media player
 couldn't load a url by default. I stream my mpd out to the world so
@@ -152,12 +152,12 @@ Here's mine:
 
 So `@string/play_pause` is a variable for "Play/Pause".
 
-<div class="well">
+{{< well >}}
 I pre-populate `@id/entry` with my server's address
 (`@string/my_server`). I only need this App to pickup my mpd
 stream, so why should I always have to type it? This way, it's
 there, but I can overwrite it if I want to.
-</div>
+{{< /well >}}
 
 ## The Activity
 
@@ -361,12 +361,12 @@ add a `service` tag to your manifest. Here's my
 Eclipse took care of all of that save for the `android:icon` and
 `service` tags which I added by hand.
 
-<div class="well">
+{{< well >}}
 If you're using an eclipse-eclim-vim setup like I am, don't edit
 the Manifest in vim. Since it's used to do the precompiling in
 eclipse, it somehow gets ahead of itself and throws errors. Just
 edit that one in eclipse directly.
-</div>
+{{< /well >}}
 
 My Service at this point does a few things:
 

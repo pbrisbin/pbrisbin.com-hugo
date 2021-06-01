@@ -57,10 +57,10 @@ perfect sense: you're in a valid git repo; when executing a `push`, you
 wouldn't expect it to use anything *but* the `remote` that was defined 
 and stored in your `.git/config`.
 
-<div class="well">
+{{< well >}}
 In some versions of git, I find that a submodule's `.git` is actually a 
 file pointing to a `.git/modules/name/` directory in the parent repo.
-</div>
+{{< /well >}}
 
 Finally, the url/directory mapping for the submodule also gets written 
 into the parent repo's `.git/config`. What purpose does that serve? If 
@@ -81,7 +81,7 @@ version (as defined in `.gitmodules`), but the `origin` remote in the
 local submodule has been changed to the `git@github` version and is 
 pushable using ssh keys.
 
-<div class="well">
+{{< well >}}
 I recently discovered that this can be solved much more elegantly by 
 adding the following to *~/.gitconfig*:
 
@@ -92,4 +92,4 @@ adding the following to *~/.gitconfig*:
 
 Now whenever `git` encounters the anonymous http remote, it'll silently 
 use the ssh-based url. Aces.
-</div>
+{{< /well >}}

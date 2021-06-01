@@ -302,11 +302,11 @@ Much of this `Guardfile` comes from [this][] blog post by Michael
 Xavier. His version also includes cabal sandbox support, so be sure to 
 check it out if that interests you.
 
-<div class="well">
+{{< well >}}
 If you like to bundle all your Ruby gems (and you probably should) that 
 can be done easily, just see my main [liquid][] repo as that's how I do 
 things there.
-</div>
+{{< /well >}}
 
 [this]: http://www.michaelxavier.net/posts/2013-07-07-Rakefile-for-Developing-Cabal-Projects-in-Haskell.html
 

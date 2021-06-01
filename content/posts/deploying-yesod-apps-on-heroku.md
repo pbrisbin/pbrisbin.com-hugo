@@ -4,25 +4,25 @@ date: 2012-10-20
 tags: [yesod]
 ---
 
-<div class="well">
+{{< well >}}
 **Update** This post describes compiling a Yesod application locally 
 using a VM to achieve the compilation on a Heroku-like machine, then 
 pushing the binary up to Heroku to be run. This is an annoying route 
 which is no longer necessary (as mentioned in the comments), so don't 
 follow it. Instead follow [this][] guide.
-</div>
+{{< /well >}}
 
 [this]: http://brianmckenna.org/blog/haskell_buildpack_heroku
 
 The following are the steps I followed to get a non-trivial Yesod 
 application running on Heroku.
 
-<div class="well">
+{{< well >}}
 This guide assumes you know what Heroku is, you've got the Toolbelt 
 installed, and your ssh keys are set up. The wiki I followed can be 
 found [here][wiki]. The Heroku "Getting started" guides were also very 
 useful.
-</div>
+{{< /well >}}
 
 [wiki]: https://github.com/yesodweb/yesod/wiki/Deploying-Yesod-Apps-to-Heroku
 
@@ -52,11 +52,11 @@ $ cat package.json
 }
 ```
 
-<div class="well">
+{{< well >}}
 The package.json file tricks Heroku into running us as if we were a 
 node.js app which really just means executing the command in the 
 Procfile.
-</div>
+{{< /well >}}
 
 ## Postgesql
 
@@ -106,7 +106,7 @@ Production:
   sslmode: require
 ```
 
-<div class="well">
+{{< well >}}
 As mentioned in the comments, putting credentials for a world-reachable 
 database into publicly shared source code is a Bad Idea. In my case, the 
 applications I place on Heroku are throw away prototypes for which this 
@@ -116,16 +116,16 @@ Please consider carefully your own security needs.
 
 This (untested) [gist][] may work for pulling the database credentials 
 from the environment.
-</div>
+{{< /well >}}
 
 [gist]: https://gist.github.com/pbrisbin/5156677
 
 ## Build
 
-<div class="well">
+{{< well >}}
 If your local hardware doesn't match Heroku's, **you're gonna have a bad 
 time**
-</div>
+{{< /well >}}
 
 There is a great pre-packaged Vagrant setup for Haskell floating around 
 bitbucket, but I found it was a bit broken. I made the needed changes to 
@@ -153,12 +153,12 @@ $ vagrant ssh
 [guest]$ cabal build
 ```
 
-<div class="well">
+{{< well >}}
 These steps will take a long time the first time around because you're 
 compiling GHC, the Haskell Platform, then installing all your Yesod 
 dependencies. As long as you don't destroy the VM, subsequent rebuilds 
 won't have to repeat those steps.
-</div>
+{{< /well >}}
 
 ## Deploy
 
@@ -183,7 +183,7 @@ If you get an Application error when viewing your freshly deployed site,
 you can check to see what's wrong via `heroku logs`. I direct you back 
 to the original [wiki][] for some trouble shooting tips.
 
-<div class="well">
+{{< well >}}
 Pushing to Heroku requires you setup SSH keys (like any hosting service 
 should). When you initially `heroku login` it will look for an existing 
 key and use it or create a default `id_rsa.pub` for you.
@@ -213,7 +213,7 @@ Host heroku.com
 ```
 
 I have similar entries for the other services I mentioned.
-</div>
+{{< /well >}}
 
 ## Automate
 
@@ -247,10 +247,10 @@ the easiest way I've found is to use the Zerigo DNS add-on:
 $ heroku addons:add zerigo_dns:basic
 ```
 
-<div class="well">
+{{< well >}}
 The add-on is free, but they do require you verify your account and add 
 billing information to install it.
-</div>
+{{< /well >}}
 
 Update your Domain Registrar to use their name servers:
 

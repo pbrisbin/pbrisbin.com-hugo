@@ -48,9 +48,9 @@ folderfilter = exclude([ '[Gmail]/All Mail'
                        ])
 ```
 
-<div class="well">
+{{< well >}}
 Yes, I exclude the "Important" stuff. How ironical.
-</div>
+{{< /well >}}
 
 You can also tell offlineimap to write a mailboxes file for mutt to 
 source. This way, mutt will stay up to date on exactly what folders you 

@@ -182,12 +182,12 @@ server {
 }
 ```
 
-<div class="well">
+{{< well >}}
 It's been my experience that starting only the keter service will not 
 then bring up nginx. Not sure if this is intended or a bug; just be 
 aware that you need to start the nginx service yourself. Keter only 
 seems to handle sending the `reload` command on deployments.
-</div>
+{{< /well >}}
 
 ## Your App
 
@@ -311,7 +311,7 @@ ExecStart=/usr/bin/keter /etc/keter.yaml
 WantedBy=multi-user.target
 ```
 
-<div class="well">
+{{< well >}}
 Recently, a post of mine made it to the front page of Hacker News and I 
 was bombarded with traffic for about 5 hours. Aside from the general 
 network slowness of serving from behind a residential Comcast IP, the 
@@ -322,7 +322,7 @@ Turns out, systemd limits any service it manages to 4096 file handles by
 default. So, if you expect to get decent traffic, it can be a good idea 
 to increase this. Adding `LimitNOFILE=<number>` to the `[Service]` block 
 above does the trick. The special value `infinity` is also available.
-</div>
+{{< /well >}}
 
 Finally, use the following to start the service and enable it at boot.
 

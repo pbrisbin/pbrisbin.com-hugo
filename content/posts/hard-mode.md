@@ -98,7 +98,7 @@ or `LocalLeader` that it's difficult to rely on. I haven't found a good
 solution to this, since the only other convention I know of is the 
 default `\` which I can rarely type consistently.
 
-<div class="well">
+{{< well >}}
 There's a bit of stategy here. It's true of most motions, but it's most 
 recognizable with `f`. You have two choices in approach: pick the letter 
 that you want to be at (no matter what letter it is) and use `;` to 
@@ -108,7 +108,7 @@ in the line (knowing that it will only take one stroke to get there) but
 which only gets you *near* your goal. These are the two extremes, 
 finding the best middle ground (lowest overall keystrokes) for any given 
 scenario is something worth mastering.
-</div>
+{{< /well >}}
 
 ## Word-wise
 
@@ -119,14 +119,14 @@ word or `e` to move word by word but with the cursor on the `e`nd of
 each word. Eventually, I'll attempt to internalize the same commands in 
 the other direction: `b` and `ge`.
 
-<div class="well">
+{{< well >}}
 All of these have capital versions (`W`, `B`, `E`, `gE`) which have the 
 same behavior but work on `WORDS` not `word`s.
 
 The exact rules about `word`s vs `WORD`s aren't worth memorizing. 
 `WORD`s are basically just a higher level of abstraction. For example, 
 `<foo-bar>` is 5 `word`s but it's only one `WORD`.
-</div>
+{{< /well >}}
 
 ## Conclusion
 

@@ -10,14 +10,14 @@ exception handling. When you're focused in at the method level you
 should trust that your objects are valid and the methods you're calling 
 behave.
 
-<div class=note>
+{{< well >}}
 In this post I use the term "assertive" to mean much the same thing as 
 Avdi's "confident". I think I like this better because the definition of 
 assertive contains both "confident" and "forceful".
 
 Your code needs to be both confident that the objects it deals with 
 behave and forceful that the objects dealing with it behave.
-</div>
+{{< /well >}}
 
 One way to give yourself this freedom is to lean on sane exception 
 handling at a higher level of abstraction. This is a concept I'm just 

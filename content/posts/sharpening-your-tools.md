@@ -162,10 +162,10 @@ command! -nargs=1 -complete=file Rename call Rename(<f-args>)
 With this, I just `:Rename to/what/it/was/supposed/to/be_test.rb` and I 
 can continue editing straight away.
 
-<div class="well">
+{{< well >}}
 Admittedly, I should just make an "add `_test` to the end of this file" 
 mapping to fully satisfy my most common use case.
-</div>
+{{< /well >}}
 
 These were just a few examples of simple tweaks to speed up your editing 
 flow, the important thing is to be very aware of the things your doing 

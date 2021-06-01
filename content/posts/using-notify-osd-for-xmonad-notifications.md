@@ -11,7 +11,7 @@ The only thing I *slightly* missed, however, was notifications when one
 of my windows set Urgency. This used to trigger a bright yellow color 
 for that workspace in my dzen-based statusbar.
 
-<div class="well">
+{{< well >}}
 **A Brief Tangent**:
 
 Windows have these properties called "hints" which they can set on 
@@ -29,7 +29,7 @@ By telling applications like mutt or weechat to print a bell when I get
 new email or someone nick-highlights me, I can easily get notifications 
 of these events even from applications that are running within screen, 
 in an ssh session, on some server far, far away. Pretty neat.
-</div>
+{{< /well >}}
 
 Now that I'm without a status bar, I need to be notified some other way. 
 Enter Notify-OSD.

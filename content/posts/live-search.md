@@ -22,10 +22,10 @@ search-as-you-type interface.
 
 [search]: http://sphinxsearch.com/
 
-<div class="well">
+{{< well >}}
 For the full context, including required imports and supporting 
 packages, please see this feature in the [wild][].
-</div>
+{{< /well >}}
 
 [wild]: https://github.com/pbrisbin/devsite
 
@@ -204,12 +204,12 @@ within that skinny handler.
 Anyway, I digress -- Here's the sphinx interface implemented as 
 `Helpers.Search` leveraging gweber's great [sphinx][] package:
 
-<div class="well">
+{{< well >}}
 The below helper actually violates my second "design pattern": *Keep 
 Helpers generic* and could be generalized away from anything 
 app-specific by simply passing a few extra arguments around. You can see 
 a more generic example [here][].
-</div>
+{{< /well >}}
 
 [sphinx]: http://hackage.haskell.org/package/sphinx
 [here]: https://github.com/pbrisbin/renters-reality/blob/master/Helpers/Sphinx.hs

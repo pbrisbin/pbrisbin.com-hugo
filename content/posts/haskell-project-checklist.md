@@ -68,7 +68,7 @@ tests:
 
 **Makefile**
 
-<div id=makefile>
+{{< well >}}
 ```makefile
 all: setup build test lint
 
@@ -91,7 +91,7 @@ lint:
 	hlint .
 	weeder .
 ```
-</div>
+{{< /well >}}
 
 ## 3. Use Hspec
 
@@ -176,9 +176,9 @@ my editor configured to run `stylish-haskell` on write.
 
 **.stylish-haskell.yaml**
 
-<div class="well">
+{{< well >}}
 **WARNING**: opinionated!
-</div>
+{{< /well >}}
 
 ```yaml
 ---
@@ -207,10 +207,10 @@ newline: native
 
 The defaults for `weeder` are usually fine for me.
 
-<div class="well">
+{{< well >}}
 If you're interested in having style fixes automatically resolved as part of
 your Pull Request process, check out [Restyled](https://restyled.io).
-</div>
+{{< /well >}}
 
 ## 6. Use Circle 2.0
 
@@ -219,7 +219,7 @@ option in the language select; maybe they'll add better support in the future.
 
 **.circleci/config.yml**
 
-<div id=circleyml>
+{{< well >}}
 ```yaml
 ---
 version: 2.0
@@ -261,7 +261,7 @@ jobs:
           name: Lint
           command: make lint
 ```
-</div>
+{{< /well >}}
 
 ![Haskell CI Example](https://images.pbrisbin.com/haskell_project_checklist/ci-example.png)
 

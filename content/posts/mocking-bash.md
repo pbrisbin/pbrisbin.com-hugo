@@ -68,9 +68,9 @@ The next time I run the test suite, nothing would actually happen. The
 recorded response would be replayed instead, my script wouldn't know 
 the difference and everything would pass reliably and instantly.
 
-<div class="well">
+{{< well >}}
 In case you didn't notice, this is [VCR][].
-</div>
+{{< /well >}}
 
 [vcr]: https://github.com/vcr/vcr
 

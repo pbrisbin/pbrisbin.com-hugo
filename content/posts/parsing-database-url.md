@@ -55,10 +55,10 @@ toKeyValue :: (Text, Text) -> Text
 toKeyValue (k, v) = k `T.append` "=" `T.append` v
 ```
 
-<div class="well">
+{{< well >}}
 This relies on the [heroku][] package, so be sure you add that to the 
 build-depends in your cabal file.
-</div>
+{{< /well >}}
 
 [heroku]: http://hackage.haskell.org/package/heroku-0.1
 

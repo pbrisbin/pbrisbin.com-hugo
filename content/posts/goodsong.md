@@ -52,12 +52,12 @@ or you can use your a WM-specific configuration to do so.
 Personally, I keep Alt-g as `goodsong` and Alt-Shift-g as
 `goodsong -p`.
 
-<div class="well">
+{{< well >}}
 You're going to have to spend some time logging songs as "good"
 before the `-p` option becomes useful.
-</div>
+{{< /well >}}
 
-<div class="well">
+{{< well >}}
 I recently received a patch from a reader for this script. It adds
 a few features which I've happily merged in.
 
@@ -65,4 +65,4 @@ a few features which I've happily merged in.
   `mpd.conf` you're currently running with at the time
 * The goodsong list is now a legitimate playlist file stored in your 
   `playlist_directory` as specified in `mpd.conf`
-</div>
+{{< /well >}}

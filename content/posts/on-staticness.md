@@ -97,19 +97,19 @@ markdown implementation I've found gets the following wrong:
 [pandoc]: http://johnmacfarlane.net/pandoc/
 
 ```
-<div class="something">
+{{< well >}}
 I want this content to **also** be parsed as markdown.
-</div>
+{{< /well >}}
 ```
 
 Pandoc does it right. Everything else puts the literal text inside the 
 `div`. This breaks all my posts horribly because I'll frequently do 
 something like:
 
-<div class="well">
+{{< well >}}
 This is in a `div` with `class="well"`, and the content inside is 
 **still** markdown.
-</div>
+{{< /well >}}
 
 I had assumed that to get pandoc support I'd have to use [Hakyll][], but 
 (at least from the docs) it seemed to be missing tags and next/previous 
@@ -118,14 +118,14 @@ custom, but again, I'm trying to decrease overall effort here.
 [Jekyll][], on the other hand, had those features already *and* let me 
 use pandoc easily by dropping [a small ruby file][plugin] in \_plugins.
 
-<div class="well">
+{{< well >}}
 **Update**: I did eventually move this blog to Hakyll.
 
 I figure if I want to be a Haskell evangelist, I really shouldn't be using a
 Ruby site generator when such a good Haskell option exists. Also, tags are now
 supported and adding next/previous links [myself][Navigation] wasn't very
 difficult.
-</div>
+{{< /well >}}
 
 [hakyll]: http://jaspervdj.be/hakyll/
 [jekyll]: http://jekyllrb.com/

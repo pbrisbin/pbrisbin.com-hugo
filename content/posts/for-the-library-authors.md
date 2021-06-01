@@ -28,11 +28,11 @@ can benefit from my trial and error.
 [comments]: https://github.com/pbrisbin/yesod-comments
 [pagination]: https://github.com/pbrisbin/yesod-paginator
 
-<div class="well">
+{{< well >}}
 I apologize for the lack of narrative or conclusion here, this is pretty 
 much just a list of things I had to take care of during the update 
 process...
-</div>
+{{< /well >}}
 
 ### Transformer Stack
 
@@ -144,9 +144,9 @@ instance YesodComments m => YesodSubDispatch CommentsAdmin (HandlerT m IO)
     where yesodSubDispatch = $(mkYesodSubDispatch resourcesCommentsAdmin)
 ```
 
-<div class="well">
+{{< well >}}
 There's probably a way around this, but I had enough wrestling to do.
-</div>
+{{< /well >}}
 
 You'll also want to make a `Handler` synonym for your subsite routes:
 

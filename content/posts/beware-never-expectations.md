@@ -86,12 +86,12 @@ Let me save you the frustration of debugging this. What's happening here
 is that when the method gets (incorrectly) called, Mocha raises an 
 `ExpectationError` which is (by design) promptly `rescue`d and logged.
 
-<div class="well">
+{{< well >}}
 I'd personally like to see Mocha not use this approach; rather count the 
 number of calls and compare that number against what was expected later 
 outside of your (possibly rescued) logic. This is how not-called-enough 
 is implemented, why not let called-too-much be handled the same way?
-</div>
+{{< /well >}}
 
 There are a couple of ways we can work around this limitation though. 
 One approach could be to re-raise the error when testing:

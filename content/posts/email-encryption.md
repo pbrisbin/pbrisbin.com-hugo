@@ -20,10 +20,10 @@ encrypted email using [GnuPG][] and [Mutt][].
 [gnupg]: http://www.gnupg.org/
 [mutt]: http://www.mutt.org/
 
-<div class="well">
+{{< well >}}
 This is mainly a regurgitation of [this][guide1] and [this][guide2], so 
 I recommend you check out those resources as well.
-</div>
+{{< /well >}}
 
 [guide1]: http://jasonwryan.com/blog/2013/07/20/gnupg/
 [guide2]: http://codesorcery.net/old/mutt/mutt-gnupg-howto

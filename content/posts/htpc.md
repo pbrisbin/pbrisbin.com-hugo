@@ -83,11 +83,11 @@ You can test it by typing `irw` and pressing some buttons.
 You'll want to add `lirc_mceusb2` to `MODULES` and `lircd` to
 `DAEMONS` in `/etc/rc.conf`.
 
-<div class="well">
+{{< well >}}
 If you find on reboot that your remote's not working, check if 
 `/dev/lirc0` exists (it needs to); if this happens, try a different USB 
 port, that solved it for me
-</div>
+{{< /well >}}
 
 Now I've got just one remote that runs my whole living room. The 
 girlfriend was pleased. There was much rejoicing.
@@ -116,10 +116,10 @@ And then adding the following to that user's `~/.xinitrc`:
 exec /usr/bin/ck-launch-session /usr/bin/dbus-launch --exit-with-session /usr/bin/xbmc --standalone -fs
 ```
 
-<div class="well">
+{{< well >}}
 Most of the above is out of date now. I defer to the [Arch wiki][wiki] for details on
 setting up XBMC.
-</div>
+{{< /well >}}
 
 [wiki]: https://wiki.archlinux.org/index.php/Xbmc
 
@@ -155,11 +155,11 @@ an XBMC button string. Through this file, you can make it so that `...
 OK mceusb` will register as "select". Then, in `remote.xml` you can 
 actually map `select` to an XBMC action, like "Select".
 
-<div class="well">
+{{< well >}}
 It's all explained
 [here](http://wiki.xbmc.org/index.php?title=Lirc_and_Lircmap.xml)
 and [here](http://wiki.xbmc.org/?title=Keymap.xml#Remote_Section).
-</div>
+{{< /well >}}
 
 The last little issue I noticed was that after playing a DVD, I couldn't 
 eject. This was fixed by adding the following line to the file 
@@ -169,7 +169,7 @@ eject. This was fixed by adding the following line to the file
 
 A reboot is required for the change to take effect.
 
-<div class="well">
+{{< well >}}
 With the update to the 2.6.34 kernel, alsa now has support for audio 
 over hdmi with my chipset (Asus/Nvidia GF210).
 
@@ -218,4 +218,4 @@ In the XBMC audio setup, specify `default` as the output device and
 `iec958` as the passthrough device.
 
 That's it!
-</div>
+{{< /well >}}

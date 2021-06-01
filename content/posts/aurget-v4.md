@@ -17,7 +17,7 @@ more understandably during program execution.
 Unintentionally, this push to simplify and clarify actually resulted in 
 a number of user-facing and developer-facing improvements. Go figure.
 
-<div class="well">
+{{< well >}}
 Listen -- I get it. I'm a minimalist too. Why do we need 400 lines to do 
 essentially [this][]?
 
@@ -33,7 +33,7 @@ features it currently provides, despite being so big.
 
 In my opinion, it can't get much simpler without dropping features, and 
 I actually like the features. Oh well, back to the post...
-</div>
+{{< /well >}}
 
 [this]: https://github.com/pbrisbin/scripts/blob/master/aur
 

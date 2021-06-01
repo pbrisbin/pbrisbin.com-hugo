@@ -4,14 +4,14 @@ date: 2013-01-20
 tags: [arch]
 ---
 
-<div class="well">
+{{< well >}}
 **BIG FAT WARNING**
 
 One thing to note, and the reason why I'm no longer using this setup: 
 screen sessions started from within X cannot survive X restarts. If you 
 don't know what that means, don't worry about it; if you do, you've been 
 warned.
-</div>
+{{< /well >}}
 
 A while back, Arch switched to [systemd][] for its init system. It's 
 pretty enjoyable from an end-user perspective, unit files are far easier 
@@ -47,12 +47,12 @@ differently than any other time. When ZSH (my shell) gets to the end of
 Translation: if I'm logging into the first physical tty, I'm not the 
 root user, and there's no display already running, then start X.
 
-<div class="well">
+{{< well >}}
 More specifically, due to the `exec` there, it *replaces itself with* X. 
 Without this, someone would find themselves at a logged-in shell if they 
 were to kill X -- something you can do even in the presence of most 
 screen locks.
-</div>
+{{< /well >}}
 
 The `startx` command eventually sources `~/.xinitrc` where we find 
 commands for initializing my X environment: wallpaper setting, a few 
@@ -106,10 +106,10 @@ but we can't enable it without starting the user session...
 The recommended way around this is to (temporarily) add `systemd --user 
 &` to the top of your current `.xinitrc` and restart X.
 
-<div class="well">
+{{< well >}}
 It's unclear to me if you could get away with just running that command 
 from some terminal right where you are -- feel free to try that first.
-</div>
+{{< /well >}}
 
 Now that we're back with a user session running, we can set up our 
 "services".
@@ -190,11 +190,11 @@ Environment=DISPLAY=:0
 WantedBy=xinit.target
 ```
 
-<div class="well">
+{{< well >}}
 It appears that we can use `%h` to represent our home directory, but 
 only in certain ways. The above works, but trying to use `%h` in the 
 path to the xmonad binary does not. Sigh.
-</div>
+{{< /well >}}
 
 **~/.config/systemd/user/synergys.service**
 

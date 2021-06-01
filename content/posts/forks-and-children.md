@@ -11,11 +11,11 @@ process continue to loop.
 
 [android-receiver]: https://github.com/pbrisbin/android-receiver
 
-<div class=note>
+{{< well >}}
 Many thanks go to falconindy who spoon fed me quite a bit as I was 
 wrapping my head around all of this knowledge I'm now shamelessly 
 presenting as my own.
-</div>
+{{< /well >}}
 
 In most languages you have some facility to group code into a logical 
 unit (a haskell function or a bash subshell) then pass that unit to a 
@@ -174,7 +174,7 @@ int main() {
 
 That's it, no more zombies.
 
-<div class="well">
+{{< well >}}
 I noticed in the source for `dzen2` that they use a double-fork approach 
 which also prevents zombies -- with no need for signal handlers (yay 
 KISS!):
@@ -200,4 +200,4 @@ wait(0);
 ```
 
 I like this approach better.
-</div>
+{{< /well >}}

@@ -26,10 +26,10 @@ The change does make the site less-then-great on less-than-wide
 monitors, but I'm not sure how many people are viewing this on mobile 
 devices, etc. We'll see if I need to bring back my `@media` queries.
 
-<div class="well">
+{{< well >}}
 Bootstrap 2.0 brings a "responsive" grid, so now the site looks pretty 
 good on just about any device.
-</div>
+{{< /well >}}
 
 I should be posting more in the coming weeks on some of the specific 
 changes as well a new search feature I'm hoping to roll out soon, but I 

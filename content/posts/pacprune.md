@@ -112,7 +112,7 @@ packages after that should be printed.
 
 So simple.
 
-<div class="well">
+{{< well >}}
 This function can get away with being simple because it doesn't take 
 into account what's actually installed on your system. It just keeps the 
 most recent 3 versions of each unique package in the cache. Therefore, 
@@ -121,7 +121,7 @@ uninstalled software. Then use this script to clear all but installed
 plus the two previous versions. This assumes the highest version in the 
 cache is the installed version which may or may not be true in all 
 cases.
-</div>
+{{< /well >}}
 
 All that's left is to make that reverse sorted list and pipe it through.
 

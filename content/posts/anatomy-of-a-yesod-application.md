@@ -6,7 +6,7 @@ tags: [haskell, yesod, self]
 
 *subtitle: how to stay sane when developing for the web in haskell*
 
-<div class="well">
+{{< well >}}
 This post was originally about how I structure my Yesod applications and 
 where it differs from the scaffold tool. I've since done a bit of a 180 
 and started to really like the scaffold tool and its structure.
@@ -17,7 +17,7 @@ and deploy Yesod applications.
 
 Note that this information is 0.8-specific and with the 0.9 and 1.0 
 versions of Yesod, this post will be obsolete (until I update it again).
-</div>
+{{< /well >}}
 
 I recently had the chance to do a coding exercise for a job interview. 
 Due to some misunderstandings of the task on my part I had to do it 
@@ -63,12 +63,12 @@ could still chose tiny, or database-driven and get all that setup at
 this point too). Then, `yesod scaffold --whatever` commands could be 
 used to build up a CRUD interface with your actual data types.
 
-<div class="well">
+{{< well >}}
 Hmm, that turned into a bit of a wine about how rails is better than 
 yesod -- that is not my opinion in general. There are tons of reasons I 
 prefer yesod overall, I was just really impressed with rails scaffolding 
 abilities.
-</div>
+{{< /well >}}
 
 ## Scaffold
 
@@ -161,7 +161,7 @@ By using the cabal file, deployments are pretty easy. I use lighttpd as
 my server-of-choice (I also let it do the static file serving), so I 
 need to compile to fastcgi.
 
-<div class="well">
+{{< well >}}
 I keep exactly one copy of any static files (including my main css) and 
 it lives only in  the production location. To support this, I define a 
 `staticLink` function in `Settings.hs` which is conditional on the 
@@ -174,7 +174,7 @@ live location. When running in production, that function just returns
 
 I find this approach is way simpler than any other way I've done static 
 file serving.
-</div>
+{{< /well >}}
 
 My cabal file builds an executable from `config/mysite.hs` which looks 
 like this:

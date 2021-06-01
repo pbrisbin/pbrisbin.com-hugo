@@ -137,7 +137,7 @@ functions. If you're having trouble seeing how an expression is
 leveraging the above laws to do what it does, it can be a good exercise 
 to de-sugar it by hand.
 
-<div class="well">
+{{< well >}}
 The super interesting thing (I find) about the above instances of 
 `Functor` and `Maybe` is that we're not making `Maybe a` an instance of 
 anything, we're describing *only* the behavior of `Maybe`. The types 
@@ -147,7 +147,7 @@ being wrapped up are irrelevant (they can even be further wrapped in
 Leaving those details out of it, or more importantly *being able* to 
 leave those details out of it is just another case of Haskell's type 
 system leading to elegant and generalized code.
-</div>
+{{< /well >}}
 
 ## Example Time
 
@@ -214,7 +214,7 @@ I did just that at one point) -- but this concept of a `Functor`
 abstracts all that down to a simple generic `fmap` that can be used with 
 a zillion different compound "wrapper" types.
 
-<div class="well">
+{{< well >}}
 Guess what? `IO` is a `Functor` too.
 
 ```haskell 
@@ -243,7 +243,7 @@ Coming back to our Monadic laws, you can imagine that if
 `getCurrentTime` failed in some way (and we know `IO` has *some* 
 implementation for `fail`) then the entire expression will be `fail` 
 simply because of the mechanics behind `>>=`.
-</div>
+{{< /well >}}
 
 Using `Maybe` as a `Monad` allows for even more verbose "stair-case" 
 code to become much more readable. For this example, we've got a series 
@@ -301,7 +301,7 @@ textToResponse t = do
 The `r <-` and `return r` is redundant but I think it shows more clearly 
 the interaction between the `a`s and `Maybe a`s.
 
-<div class="well">
+{{< well >}}
 You can even mix `do` notations within each other:
 
 ```haskell 
@@ -321,7 +321,7 @@ main = do
     -- and IO again
     sendResponse mresponse
 ```
-</div>
+{{< /well >}}
 
 So hopefully you've all learned a little bit through this post. I know 
 it was helpful for me to write it all out. We've seen that `Maybe` is a 

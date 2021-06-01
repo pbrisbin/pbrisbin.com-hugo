@@ -120,9 +120,9 @@ TEXT
   ${time %a %b %d %H:%M}
 ```
 
-<div class="well">
+{{< well >}}
 Line breaks added for clarity.
-</div>
+{{< /well >}}
 
 The most interesting part is the clickable areas: `^ca( ... )some 
 text^ca()` defines an area of "some text" that can be clicked. The 

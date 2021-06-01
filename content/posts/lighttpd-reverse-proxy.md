@@ -15,7 +15,7 @@ then proxy certain urls through to it via lighttpd.
 This how-to will outline the steps needed to get this setup and comment 
 a little bit on what all the moving parts do.
 
-<div class="well">
+{{< well >}}
 This guide assumes your code is structured roughly like the 0.9.1 
 scaffolder, and your `Application.hs` exports that `withYourApp` 
 function which is used by `main.hs` and compiled into a binary and 
@@ -24,7 +24,7 @@ executed.
 My application is called "DevSite" (I don't know why), so anywhere you 
 see that in this guide, just assume I mean your foundation type / app 
 name.
-</div>
+{{< /well >}}
 
 ## Why
 

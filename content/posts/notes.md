@@ -34,11 +34,11 @@ folder:
 
 I also add "Skip inbox" and "Mark as read" as part of the rule.
 
-<div class="well">
+{{< well >}}
 I know the gmail filters support some level of regex and/or globbing, 
 but I don't know where it ends. I'm hoping that the `^` anchor is 
 supported but I'm not positive.
-</div>
+{{< /well >}}
 
 Requirements 2 and 3 done.
 
@@ -72,11 +72,11 @@ noteit() {
 }
 ```
 
-<div class="well">
+{{< well >}}
 You could probably also streamline note taking by leveraging mutt's -H 
 option. I'll leave reading that man page snippet as an exercise to the 
 reader.
-</div>
+{{< /well >}}
 
 And here's how that might work out in the day-to-day:
 
@@ -91,11 +91,11 @@ And here's how that might work out in the day-to-day:
 
     //blue/0/~/
 
-<div class="well">
+{{< well >}}
 You could also use `sendmail`, `mailx`, `msmtp` or whatever other <abbr 
 title="command line interface">CLI</abbr> mail solution you want for 
 this.
-</div>
+{{< /well >}}
 
 And there it is, ready to be indexed by the almighty google:
 

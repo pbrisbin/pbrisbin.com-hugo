@@ -55,10 +55,10 @@ stringIsEven s = even $ length s
 stringIsEven = even . length
 ```
 
-<div class="well">
+{{< well >}}
 Remember, `$` is function *application* while `.` is function 
 *composition*.
-</div>
+{{< /well >}}
 
 I think that gives you a general idea for how it works. Now let's 
 translate that to the specific example at hand:
@@ -77,7 +77,7 @@ its arguments is `True`.
 -- False
 ```
 
-<div class="well">
+{{< well >}}
 Curious how `(||)` is defined in haskell's Prelude?
 
 ```haskell 
@@ -91,7 +91,7 @@ Wow.
 Haskell's laziness means there's no special tricks needed to make if 
 statements "short circuit". Haskell won't evaluate the second expression 
 if the first is `True` because it's simply never needed.
-</div>
+{{< /well >}}
 
 OK, back to our function.
 
@@ -166,11 +166,11 @@ recursion to be type safe.
 Often, the types `a` and `b` are the same (as in `sum'` explained 
 below), but this is not required.
 
-<div class="well">
+{{< well >}}
 `foldr` and `foldl` are different in the direction of the fold: folding 
 to the right or folding to the left. In some cases this doesn't matter, 
 in others it does.
-</div>
+{{< /well >}}
 
 Let's look at a folding sum as a concrete example:
 
@@ -305,10 +305,10 @@ any'    p list = foldr ((||)   . p)         False  list
 liftAny p list = foldr ((<||>) . p) (return False) list
 ```
 
-<div class="well">
+{{< well >}}
 `return False` is simply the *lifted* version of `False` just like 
 `(=?)` is the *lifted* version of `(==)`...
-</div>
+{{< /well >}}
 
 Now my manage hooks can leverage a [list comprehension][listcomp] for a 
 much more concise and readable rule.

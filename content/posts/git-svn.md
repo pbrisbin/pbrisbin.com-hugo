@@ -50,10 +50,10 @@ This will make your local commits one-for-one as SVN commits on trunk.
 It uses these commits and their messages as-is, so make sure `git log` 
 shows exactly what you want to publish before you execute this.
 
-<div class="well">
+{{< well >}}
 Both of these commands require a clean working directory. Later, you'll 
 see a shortcut for using `git stash` to get around this limitation.
-</div>
+{{< /well >}}
 
 Branches which you create with a simple `git checkout -b foo` will be 
 local-only branches. They have no relationship with any SVN branches and 
@@ -79,9 +79,9 @@ to check them out until you let your local repo know about them:
 $ git svn fetch
 ```
 
-<div class="well">
+{{< well >}}
 This effectively does a `rebase` of all branches as part of the update.
-</div>
+{{< /well >}}
 
 At any time, you can a list of all remote branches with:
 

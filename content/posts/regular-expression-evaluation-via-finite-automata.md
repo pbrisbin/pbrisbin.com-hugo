@@ -245,10 +245,10 @@ whenever we need a new identifier. Because we can't maintain that as a variable
 we constantly update every time we pull an identifier out, we'll use the `State`
 monad to mimic mutable state through our computations.
 
-<div class="well">
+{{< well >}}
 I apologize for the naming confusion here. This `State` type is from the Haskell
 library and has nothing to with the states of our NFAs.
-</div>
+{{< /well >}}
 
 First, we take the parameterized `State s a` type, and fix the `s` variable as a
 list of (potential) identifiers:

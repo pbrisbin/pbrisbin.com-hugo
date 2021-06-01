@@ -18,12 +18,12 @@ two other posts [here][1] and [here][2].
 [1]: /posts/mutt_gmail_offlineimap "Mutt + Gmail + Offlineimap"
 [2]: /posts/two_accounts_in_mutt   "Using Two IMAP Accounts in Mutt"
 
-<div class="well">
+{{< well >}}
 If you need a little context, checkout my [mutt-config repo][repo] which 
 has a fully functioning `~/.mutt`, example files for the other apps 
 involved (offlineimap, msmtprc, and now mairix), and any scripts the 
 setup needs.
-</div>
+{{< /well >}}
 
 [repo]: https://github.com/pbrisbin/mutt-config "mutt-config on github"
 
@@ -64,10 +64,10 @@ With that in place, run `mairix` once to build the initial index. This
 first run will be slower but in my tests, subsequent rebuilds were almost 
 instant.
 
-<div class="well">
+{{< well >}}
 In situations like these, I'll usually add a verbose flag so I can be 
 sure things are working as expected.
-</div>
+{{< /well >}}
 
 At this point, you could actually do some searching right from the 
 commandline:
@@ -175,11 +175,11 @@ the actual `change-folder` command, then executes it.
 macro generic ,s "<enter-command>set my_cmd = \`$HOME/.mutt/msearch\`<return><enter-command>push \$my_cmd<return>" "search messages"
 ```
 
-<div class="well">
+{{< well >}}
 I've gotten used to "comma-keybinds" from setting that as my localleader 
 in vim. It's nice because it very rarely conflicts with anything 
 existing and it's quite fast to type.
-</div>
+{{< /well >}}
 
 One downside which I've been unable to fix (and believe me, I've tried!) 
 is that if you press ^G to cancel a search but you've typed a few 

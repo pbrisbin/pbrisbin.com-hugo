@@ -52,12 +52,12 @@ take some time, but once done, you should see the folders under
 Once you're satisfied syncing is working, we'll schedule a periodic sync 
 via cron.
 
-<div class="well">
+{{< well >}}
 There are some tempting options offlineimap has for daemonizing itself 
 to handle periodic syncing for you -- in my experience these don't work. 
 Scheduling a full offlineimap run via cron is the only working setup 
 I've been able to find.
-</div>
+{{< /well >}}
 
 To work around a thread-joining bug, I've landed on a wrapper script 
 that spawns offlineimap to the background then babysits the process for 
