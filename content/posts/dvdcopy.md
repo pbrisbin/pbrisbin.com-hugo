@@ -10,7 +10,7 @@ Do not use this for bad things, m'kay?
 
 ## What it looks like
 
-![Dvdcopy Shot](https://images.pbrisbin.com/dvdcopy/dvdcopy.png)
+![Dvdcopy Shot](/images/dvdcopy/dvdcopy.png)
 
 ## Usage
 

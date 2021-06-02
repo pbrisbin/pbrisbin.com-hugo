@@ -263,7 +263,7 @@ jobs:
 ```
 {{< /well >}}
 
-![Haskell CI Example](https://images.pbrisbin.com/haskell_project_checklist/ci-example.png)
+![Haskell CI Example](/images/haskell-project-checklist/ci-example.png)
 
 Quite nice.
 

@@ -182,7 +182,7 @@ to do things 3 times.
 If you configure [ShellCheck][] in your editor (you should!), that can at least
 protect you from most mistakes in item 2:
 
-![](https://images.pbrisbin.com/an_opinionated_guide_to_options_parsing_in_shell/shellcheck-not-handled.png)
+![](/images/an-opinionated-guide-to-options-parsing-in-shell/shellcheck-not-handled.png)
 
 [ShellCheck]: https://www.shellcheck.net/
 

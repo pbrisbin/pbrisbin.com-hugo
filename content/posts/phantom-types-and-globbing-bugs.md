@@ -208,7 +208,7 @@ bug present.
 
 How did Haskell let this happen?
 
-![](https://images.pbrisbin.com/phantom_types_and_globbing_bugs/haskell-bike.jpg)
+![](/images/phantom-types-and-globbing-bugs/haskell-bike.jpg)
 
 We're using `Glob` in 4 different cases:
 

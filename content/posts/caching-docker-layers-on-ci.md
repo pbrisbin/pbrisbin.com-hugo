@@ -304,4 +304,4 @@ And by putting this all inside the `restyled/ops` image, which can be used
 directly as a Circle job's environment, I can "port" this to all my projects
 trivially.
 
-![Using cache](https://images.pbrisbin.com/caching-docker-layers-on-ci/using-cache.png)
+![Using cache](/images/caching-docker-layers-on-ci/using-cache.png)

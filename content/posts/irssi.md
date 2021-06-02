@@ -17,7 +17,7 @@ be found [here][weechat].
 
 ## Screenshot
 
-![Irssi Screenshot](https://images.pbrisbin.com/irssi/irssi.png)
+![Irssi Screenshot](/images/irssi/irssi.png)
 
 ## Config
 

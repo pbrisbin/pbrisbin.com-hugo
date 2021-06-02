@@ -134,10 +134,10 @@ uses your music collection's tags (which I'm a bit OCD about anyway).
 The result is an instantly full and beautiful library. Here are some 
 screenshots:
 
-![HTPC Shot](https://images.pbrisbin.com/htpc/htpc_0.bmp)
-![HTPC Shot](https://images.pbrisbin.com/htpc/htpc_1.bmp)
-![HTPC Shot](https://images.pbrisbin.com/htpc/htpc_2.bmp)
-![HTPC Shot](https://images.pbrisbin.com/htpc/htpc_4.bmp)
+![HTPC Shot](/images/htpc/htpc-0.bmp)
+![HTPC Shot](/images/htpc/htpc-1.bmp)
+![HTPC Shot](/images/htpc/htpc-2.bmp)
+![HTPC Shot](/images/htpc/htpc-4.bmp)
 
 ## Remote configuration
 

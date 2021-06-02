@@ -28,7 +28,7 @@ this post is more about dzen's general usefulness.
 
 First up, a small visual notification when I adjust my volume:
 
-![ossvol screenshot](https://images.pbrisbin.com/dzen/ossvol.png)
+![ossvol screenshot](/images/dzen/ossvol.png)
 
 It fades in (implicitly thanks to [xcompmgr][]) for just a second when I 
 adjust my volume and gives me that nice, unobtrusive indication of the 
@@ -76,7 +76,7 @@ Little known fact: you can use the ubiquitous [conky][] to feed a simple
 statusbar via dzen. This means you can also use dzen escapes in your 
 `TEXT` block to do cool things:
 
-![dzen screenshot](https://images.pbrisbin.com/dzen/dzen.png)
+![dzen screenshot](/images/dzen/dzen.png)
 
 [conky]: http://conky.sourceforge.net/
 
