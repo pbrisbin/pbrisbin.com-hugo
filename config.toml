@@ -1,4 +1,5 @@
 baseURL = "https://pbrisbin.com/"
+googleAnalytics = "UA-22304237-1"
 languageCode = "en-us"
 title = "pbrisbin dot com"
 theme = "mini-mod"
@@ -14,3 +15,4 @@ theme = "mini-mod"
 
 [params]
   copyright = "© pbrisbin dot com 2008 - forever"
+  enableGoogleAnalytics = true
