@@ -1,7 +1,7 @@
 ---
 title: "Reader for Free"
 date: 2021-09-10T10:39:58-04:00
-draft: false
+tags: [haskell, yesod]
 ---
 
 This may be obvious or well-known to some, but I discovered the other day that
