@@ -11,7 +11,7 @@ theme = "mini-mod"
 
 [social]
   github = "https://github.com/pbrisbin"
-  twitter = "https://twitter.com/patbrisbin"
+  mastodon = "https://functional.cafe/@pbrisbin"
 
 [params]
   copyright = "© pbrisbin dot com 2008 - forever"
