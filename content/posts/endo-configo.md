@@ -58,7 +58,7 @@ dealt with, and it has always come out slightly ugly in my experience.
 
 Perhaps there's a better way...
 
-### A Functional Approach with Endo Parsers
+## A Functional Approach with Endo Parsers
 
 One pattern I tried (and loved) in a recent module was to write a more
 _functional_ parser. It plays really well with some other patterns already in
