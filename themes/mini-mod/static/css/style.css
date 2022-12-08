@@ -117,6 +117,7 @@ h4:hover a {
 }
 .highlight pre {
   padding: 7px;
+  margin: 0;
 }
 
 .highlight {
