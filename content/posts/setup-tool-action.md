@@ -121,7 +121,9 @@ with:
   arch-linux: amd64
 ```
 
-Yeah, this is a lot. But it's still better than building and maintaining
+(By the way, `arch-linux` is my favorite input.)
+
+Yeah, this is a lot. But it's still better than building and maintaining a
 whole-ass action right? It's also worth noting that if you only ever run things
 on one runner, there's no need to get so verbose. Just do what your runner
 needs:
