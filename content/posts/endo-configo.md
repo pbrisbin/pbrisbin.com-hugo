@@ -31,7 +31,7 @@ use configuration of "log settings" via environment variables and
 ```hs
 data LogSettings = LogSettings
   { settingsLogLevel :: LogLevel
-  , settingsLogColor :: Bool
+  , settingsLogColor :: LogColor
   }
 
 envLogSettings :: Parser LogSettings
@@ -69,7 +69,7 @@ the internals:
 ```hs
 data LogSettings = LogSettings
   { settingsLogLevel :: LogLevel
-  , settingsLogColor :: Bool
+  , settingsLogColor :: LogColor
   }
 
 defaultLogSettings :: LogSettings
@@ -163,8 +163,8 @@ wrapped values:
 optLogSettings :: Parser (Endo LogSettings)
 optLogSettings = fold <$> sequenceA
   [ option (eitherReader (endo setLogLevel readLogLevel)) (long "log-level")
-  , option (eitherReader (endo setLogColor readLogColor)) (long "color")
-  , flag mempty (Endo $ setLogLevel LevelDebug) (long "color")
+  , flag mempty (Endo $ setLogColor LogColorAlways) (long "color")
+  , flag mempty (Endo $ setLogLevel LevelDebug) (long "debug")
   ]
 ```
 
