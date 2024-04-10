@@ -144,18 +144,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: freckle/stack-cache-action@v1
+      - uses: actions/checkout@v4
 
       - id: stack
-        uses: freckle/stack-action@v3
+        uses: freckle/stack-action@v5
         with:
-          stack-arguments: --coverage
+          compiler-tools: hpc-lcov
+          stack-build-arguments: --coverage
 
-      - run: |
-          stack --no-terminal install --copy-compiler-tool hpc-lcov
-          stack --no-terminal exec -- \
-            hpc-lcov --file '${{ steps.stack.outputs.local-hpc-root }}/combined/all/all.tix'
+      - run: stack --no-terminal exec -- hpc-lcov --file "$HPC_ROOT"/combined/all/all.tix
+        env:
+          HPC_ROOT: ${{ steps.stack.outputs.local-hpc-root }}
 
       - uses: codecov/codecov-action@v2
         with:
