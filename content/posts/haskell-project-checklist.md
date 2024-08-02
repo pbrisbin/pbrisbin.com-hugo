@@ -271,11 +271,6 @@ Don't forget to enable "build forked Pull Requests" in Circle's settings.
 
 ## 7. Release to Hackage
 
-I wrap this up in my own [hackage-release script][hackage-release], but here are
-the relevant actions:
-
-[hackage-release]: https://github.com/pbrisbin/dotfiles/blob/master/local/bin/hackage-release
-
 ```console
 stack build --pedantic --test
 stack upload .
