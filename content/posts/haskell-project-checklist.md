@@ -68,7 +68,7 @@ tests:
 
 **Makefile**
 
-{{< well >}}
+<div id=makefile>
 ```makefile
 all: setup build test lint
 
@@ -91,7 +91,7 @@ lint:
 	hlint .
 	weeder .
 ```
-{{< /well >}}
+</div>
 
 ## 3. Use Hspec
 
@@ -219,7 +219,7 @@ option in the language select; maybe they'll add better support in the future.
 
 **.circleci/config.yml**
 
-{{< well >}}
+<div id=circleyml>
 ```yaml
 ---
 version: 2.0
@@ -261,7 +261,7 @@ jobs:
           name: Lint
           command: make lint
 ```
-{{< /well >}}
+</div>
 
 ![Haskell CI Example](/images/haskell-project-checklist/ci-example.png)
 

@@ -137,7 +137,7 @@ something like this:
 ```html 
 <input id="search">
 
-{{< well >}}
+<div id="results"></div>
 
 <script>
     $(function() {
