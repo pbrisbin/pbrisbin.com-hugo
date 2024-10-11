@@ -64,9 +64,11 @@ requests:
 ```hs
 app :: Application
 app _request respond = do
+  putStrLn "app: seeing request"
   putStrLn "app: about to respond"
   recvd <- respond $ responseLBS status200 [] "OK\n"
   putStrLn "app: responded"
+  putStrLn "app: done"
   pure recvd
 ```
 
@@ -202,6 +204,7 @@ And back in the first terminal, see what we got.
 middleware 1: seeing request
 middleware 2: seeing request
 middleware 3: seeing request
+app: seeing request
 app: about to respond
 middleware 3: about to respond
 middleware 2: about to respond
@@ -210,16 +213,72 @@ middleware 1: responded
 middleware 2: responded
 middleware 3: responded
 app: responded
+app: done
 middleware 3: done
 middleware 2: done
 middleware 1: done
 ```
 
-As you can see, the idea of order is ambiguous:
+As you can see, the idea of (temporal) order is ambiguous: there are two cases
+things run 1-2-3-app and two cases they run app-3-2-1. This is why composing
+middles-ware (I like it) correctly is confusing. What will run "before" or
+"after" depends on at what point in the life-cycle the behavior occurs.
 
-- There are two cases the middleware runs 1-2-3 and two cases it runs 3-2-1
-- The `app` is the "last" to see the request, but "first" to respond
+For the purposes of describing where things are relative to another when
+composed, I'm going to decide arbitrarily that it's,
 
-This is why composing middles-ware correctly is confusing. It depends at which
-point in the life-cycle the middleware's behavior matters to the things with
-which it's composed.
+```hs
+run port $ middleware "1" . middleware "2" . middleware "3" $ app
+        -- earlier  --------------------------------->      later
+        -- before   --------------------------------->      after
+        -- upstream ---------------------------------> downstream
+```
+
+## Taxonomy of Behaviors
+
+For reference, let me reproduce our middleware:
+
+```hs
+middleware :: String -> Middleware
+middleware name app request respond = do
+  putStrLn $ "middleware " <> name <> ": seeing request" -- (1)
+
+  recvd <- app request $ \response -> do
+    putStrLn $ "middleware " <> name <> ": about to respond" -- (2)
+
+    recvd <- respond response
+    putStrLn $ "middleware " <> name <> ": responded" -- (3)
+
+    pure recvd
+
+  putStrLn $ "middleware " <> name <> ": done" -- (4)
+  pure recvd
+```
+
+And what we saw when running it:
+
+```console
+middleware 1: seeing request
+middleware 2: seeing request
+middleware 3: seeing request
+app: seeing request
+app: about to respond
+middleware 3: about to respond
+middleware 2: about to respond
+middleware 1: about to respond
+middleware 1: responded
+middleware 2: responded
+middleware 3: responded
+app: responded
+app: done
+middleware 3: done
+middleware 2: done
+middleware 1: done
+```
+
+Given this, what sorts of behaviors makes sense at points 1 through 4?
+
+1. Modifying the request for "downstream", side-effects for "later"
+2. Modifying the response for "upstream", side-effects for "later"
+3. Side effects for "later"
+4. Side effects for "earlier"
