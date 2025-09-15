@@ -1,3 +1,1 @@
-# pbrisbin dot com
-
-Hugo source for generating <https://pbrisbin.com>.
+Project moved to https://codeberg.org/pbrisbin/pbrisbin.com
